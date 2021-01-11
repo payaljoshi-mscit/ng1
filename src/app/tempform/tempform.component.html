@@ -1,0 +1,6 @@
+<p>tempform works!</p>
+<form #userform="ngForm" (ngSubmit)="onsubmit(userform.value)" >
+    Username: <input type="text" name="username" ngModel ><br>
+    Email: <input type="text" name="email" ngModel ><br>
+    <input type="submit"  >
+</form>

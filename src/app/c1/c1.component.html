@@ -1,0 +1,24 @@
+<p>Comp1</p>
+<span appMydir1 >Welcome to {{str}}.</span> 
+{{num|sqrt}}
+{{v1 |sqrt}}<br>
+{{s1}}<br>
+{{a1}}<br>
+{{b1}}
+<button (click)="f1($event)">Click</button>
+<input   [(ngModel)]="str" ><br>
+{{str}}
+<button [disabled]="b1">Save</button>
+  <ul>
+    <li *ngFor="let i of collection | slice:1:3">{{i}}</li>
+  </ul>
+<select>
+    <option *ngFor="let i of a1">{{i}}</option>
+</select>
+<ul>
+    <li *ngFor="let j of a1">{{j}}</li>
+</ul>
+
+<span *ngIf="b1==true">
+    {{s1 | uppercase}}
+</span>

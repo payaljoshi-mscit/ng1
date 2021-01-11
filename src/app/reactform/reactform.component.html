@@ -1,0 +1,6 @@
+<p>reactform works!</p>
+<form [formGroup]="userform" (ngSubmit)="onsubmit()">
+    Username: <input type="text" name="username" formControlName="username"><br>
+    Email: <input type="text" name="email" formControlName="email"><br>
+    <input type="submit" [disabled]="userform.invalid"  >
+</form>
